@@ -1,4 +1,4 @@
-@define-mixin align $x $y {
+@define-mixin align $x, $y {
   justify-content: $x;
   text-align: $y;
 }
