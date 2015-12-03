@@ -1,0 +1,30 @@
+@define-mixin align $x $y {
+  justify-content: $x;
+  text-align: $y;
+}
+
+@define-mixin text-align $x, $y {
+  align-items: $y;
+  display: flex;
+  justify-content: $x;
+}
+
+%start { @mixin align flex-start, start; }
+
+%center { @mixin align center, center; }
+
+%end { @mixin align flex-end, end; }
+
+%text-center { @mixin text-align center, center; }
+
+%text-middle { @mixin text-align flex-start, center; }
+
+%top { align-items: flex-start; }
+
+%middle { align-items: center; }
+
+%bottom { align-items: flex-end; }
+
+%around { justify-content: space-around; }
+
+%between { justify-content: space-between; }
