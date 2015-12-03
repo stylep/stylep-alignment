@@ -1,6 +1,6 @@
 # stylep-alignment
 
-Everything you need to get started making a new style pattern.
+Helper classes for object alignment.
 
 ## Install
 ``` shell
