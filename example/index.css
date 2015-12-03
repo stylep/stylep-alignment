@@ -1,0 +1,26 @@
+/* @import stylep-alignment; */
+@import '../index.css';
+
+.align { @mixin align flex-start, end; }
+
+.text-align { @mixin text-align flex-start, center; }
+
+.start { @extend %start; }
+
+.center { @extend %center; }
+
+.end { @extend %end; }
+
+.text-center { @extend %text-center; }
+
+.text-middle { @extend %text-middle; }
+
+.top { @extend %top; }
+
+.middle { @extend %middle; }
+
+.bottom { @extend %bottom; }
+
+.around { @extend %around; }
+
+.between { @extend %between; }
