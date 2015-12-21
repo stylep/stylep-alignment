@@ -3,8 +3,10 @@
 Helper classes for object alignment.
 
 ## Install
+You can install using the [spm](https://github.com/stylep/stylep) command or install using npm and the project name.
+
 ``` shell
-npm i --save-dev stylep-alignment
+spm install alignment
 ```
 
 ## Usage
