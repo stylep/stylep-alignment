@@ -9,15 +9,23 @@
   justify-content: $x;
 }
 
+%text-start { @mixin text-align flex-start, center; }
+
+%text-center { @mixin text-align center, center; }
+
+%text-end { @mixin text-align flex-end, center; }
+
+%text-top { @mixin text-align flex-start, flex-start; }
+
+%text-middle { @mixin text-align flex-start, center; }
+
+%text-bottom { @mixin text-align flex-start, flex-end; }
+
 %start { @mixin align flex-start, start; }
 
 %center { @mixin align center, center; }
 
 %end { @mixin align flex-end, end; }
-
-%text-center { @mixin text-align center, center; }
-
-%text-middle { @mixin text-align flex-start, center; }
 
 %top { align-items: flex-start; }
 
