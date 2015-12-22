@@ -1,19 +1,81 @@
-/* @import stylep-alignment; */
+/* @import 'stylep-alignment'; */
 @import '../index.css';
 
-.align { @mixin align flex-start, end; }
+@import 'stylep-grid';
 
-.text-align { @mixin text-align flex-start, center; }
+body {
+  background-color: #E8EBEF;
+  color: #6B6B77;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+h1 { font-weight: 100; letter-spacing: 1px; }
+h2 { font-weight: 200; }
+h3 { font-weight: 300; }
+
+.row { @extend %row; }
+
+.column--half { @mixin column 50%; }
+
+.column--tenth { @mixin column 10%; }
+
+/* box for examples */
+.box,
+%box {
+  background-color: #444;
+  color: white;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+  padding-top: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.box--small {
+  @extend %box;
+  width: 300px;
+}
+
+.box--large {
+  @extend %box;
+  height: 100px;
+}
+
+.box--first {
+  @extend %box;
+  background-color: grey;
+}
+
+.box--nested {
+  @extend %box;
+  background-color: #bdbdbd;
+}
+
+.text-start { @extend %text-start; }
+
+.text-center { @extend %text-center; }
+
+.text-end { @extend %text-end; }
+
+.text-top { @extend %text-top; }
+
+.text-middle { @extend %text-middle; }
+
+.text-bottom { @extend %text-bottom; }
 
 .start { @extend %start; }
 
 .center { @extend %center; }
 
 .end { @extend %end; }
-
-.text-center { @extend %text-center; }
-
-.text-middle { @extend %text-middle; }
 
 .top { @extend %top; }
 

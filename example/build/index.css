@@ -1,14 +1,22 @@
-/* @import stylep-alignment; */
+/* @import 'stylep-alignment'; */
+
+.text-start { align-items: center; display: flex; justify-content: flex-start; }
+
+.text-center { align-items: center; display: flex; justify-content: center; }
+
+.text-end { align-items: center; display: flex; justify-content: flex-end; }
+
+.text-top { align-items: flex-start; display: flex; justify-content: flex-start; }
+
+.text-middle { align-items: center; display: flex; justify-content: flex-start; }
+
+.text-bottom { align-items: flex-end; display: flex; justify-content: flex-start; }
 
 .start { justify-content: flex-start; text-align: start; }
 
 .center { justify-content: center; text-align: center; }
 
 .end { justify-content: flex-end; text-align: end; }
-
-.text-center { align-items: center; display: flex; justify-content: center; }
-
-.text-middle { align-items: center; display: flex; justify-content: flex-start; }
 
 .top { align-items: flex-start; }
 
@@ -20,6 +28,84 @@
 
 .between { justify-content: space-between; }
 
-.align { justify-content: flex-start; text-align: end; }
+/* Spacer */
 
-.text-align { align-items: center; display: flex; justify-content: flex-start; }
+/* Container */
+%container, %container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Row */
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  margin-left: var(--gutter-compensation, -.5rem);
+  margin-right: var(--gutter-compensation, -.5rem);
+}
+
+.row {
+  flex-direction: row;
+}
+
+/* Columns */
+
+.column--half, .column--tenth {
+  box-sizing: border-box;
+  flex: 1 0 0%;
+  max-width: 100%;
+  padding-left: var(--half-gutter-width, .5rem);
+  padding-right: var(--half-gutter-width, .5rem);
+}
+
+body {
+  background-color: #E8EBEF;
+  color: #6B6B77;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+h1 { font-weight: 100; letter-spacing: 1px; }
+h2 { font-weight: 200; }
+h3 { font-weight: 300; }
+
+.column--half { flex-basis: 50%; max-width: 50%; }
+
+.column--tenth { flex-basis: 10%; max-width: 10%; }
+
+/* box for examples */
+.box, .box--small, .box--large, .box--first, .box--nested {
+  background-color: #444;
+  color: white;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+  padding-top: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.box--small {
+  width: 300px;
+}
+
+.box--large {
+  height: 100px;
+}
+
+.box--first {
+  background-color: grey;
+}
+
+.box--nested {
+  background-color: #bdbdbd;
+}

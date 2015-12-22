@@ -1,12 +1,81 @@
 <!doctype html>
-<head>
+<head lang="US-en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>stylep-alignment/example</title>
         <link rel="stylesheet" href="build/index.css">
-        <title>stylep-name/example</title>
 </head>
 <body>
-        <h1>stylep-name/example</h1>
+        <h1>stylep-alignment/example</h1>
 
-        <!-- example code with classNames applied -->
+        <h2>Patterns</h2>
+
+        <h3>Text Align</h3>
+
+        <section> <div class="text-start box">.text-start</div> </section>
+        <section> <div class="text-center box">.text-center</div> </section>
+        <section> <div class="text-end box">.text-end</div> </section>
+        <section> <div class="text-top box--large">.text-top</div> </section>
+        <section> <div class="text-middle box--large">.text-middle</div> </section>
+        <section> <div class="text-bottom box--large">.text-bottom</div> </section>
+
+        <h3>Box Align</h3>
+
+        <section>
+                <div class="row start box--nested">
+                        <div class="column--tenth box">.start</div>
+                </div>
+        </section>
+
+        <section>
+                <div class="row center box--nested">
+                        <div class="column--tenth box">.center</div>
+                </div>
+        </section>
+
+        <section>
+                <div class="row end box--nested">
+                        <div class="column--tenth box">.end</div>
+                </div>
+        </section>
+
+        <section>
+                <div class="row top">
+                        <div class="column--half"><div class="box--large">.top</div></div>
+                        <div class="column--half"><div class="box"></div></div>
+                </div>
+        </section>
+
+        <section>
+                <div class="row middle">
+                        <div class="column--half"><div class="box--large">.middle</div></div>
+                        <div class="column--half"><div class="box"></div></div>
+                </div>
+        </section>
+
+        <section>
+                <div class="row bottom">
+                        <div class="column--half"><div class="box--large">.bottom</div></div>
+                        <div class="column--half"><div class="box"></div></div>
+                </div>
+        </section>
+
+        <h3>Box Spacing</h3>
+
+        <section>
+                <div class="row around box--nested">
+                        <div class="column--tenth"><div class="box">.around</div></div>
+                        <div class="column--tenth"><div class="box"></div></div>
+                        <div class="column--tenth"><div class="box"></div></div>
+                </div>
+        </section>
+
+        <section>
+                <div class="row between box--nested">
+                        <div class="column--tenth"><div class="box">.between</div></div>
+                        <div class="column--tenth"><div class="box"></div></div>
+                        <div class="column--tenth"><div class="box"></div></div>
+                </div>
+        </section>
 
 </body>
 
