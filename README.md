@@ -11,7 +11,7 @@ spm install alignment
 
 ## Usage
 ``` css
-/* name.css */
+/* alignment.css */
 
 @import “stylep-alignment”;
 
