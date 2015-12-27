@@ -83,3 +83,6 @@ This mixin controls the alignment of text objects it is applied to.
 @mixin text-align flex-start, center;
 ```
 
+## License
+This project is licensed under the MIT [license](LICENSE).
+
